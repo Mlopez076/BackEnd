@@ -1,33 +1,33 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package DataLayer;
-import java.sql.*;
-/**
- *
- * @author Edgar Garibay
- */
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import javax.swing.JOptionPane;
+
 public class Connect {
-    
 
-  public static void main (String args []) throws SQLException
-  {
-    
+    private static Connection conn = null;
+    private static String login = "Prueba";
+    private static String clave = "234509";
+    private static String url = "jdbbc:oracle:thin:@localhost:1521";
 
-    DriverManager.registerDriver (new oracle.jdbc.driver.OracleDriver());
-
-    Connection conn = DriverManager.getConnection
-          ("jdbc:oracle:thin:@WIN01:1521:oracleBD", "user", "passw");
-         // driver@machineName:port:SID           ,  userid,  password
-
-    Statement stmt = conn.createStatement();
-    ResultSet rset = 
-              stmt.executeQuery("select BANNER from SYS.V_$VERSION");
-    while (rset.next())
-         System.out.println (rset.getString(1));   // Print col 1
-    stmt.close();
-    
-
-  }
- } 
+    public static Connection getConnection() {
+        try {
+            Class.forName("oracle.jdbc.driver.Oracle Driver");
+            conn = DriverManager.getConnection(url, login, clave);
+        conn.setAutoCommit(false);
+        if(conn!=null){
+            System.out.println("Conexion establecida");
+        }else{
+            System.out.println("Conexion erronea");
+        }
+        
+        } catch (ClassNotFoundException | SQLException e)
+        {
+            
+                JOptionPane.showMessageDialog(null, "Conexion erronea");
+        }
+        return conn;
+    }
+}
