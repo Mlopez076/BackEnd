@@ -12,22 +12,35 @@ public class Connect {
     private static String clave = "234509";
     private static String url = "jdbbc:oracle:thin:@localhost:1521";
 
+    public static void main(String[] args) {
+        Connect c = new Connect();
+    }
+
     public static Connection getConnection() {
         try {
             Class.forName("oracle.jdbc.driver.Oracle Driver");
             conn = DriverManager.getConnection(url, login, clave);
-        conn.setAutoCommit(false);
-        if(conn!=null){
-            System.out.println("Conexion establecida");
-        }else{
-            System.out.println("Conexion erronea");
-        }
-        
-        } catch (ClassNotFoundException | SQLException e)
-        {
-            
-                JOptionPane.showMessageDialog(null, "Conexion erronea");
+            conn.setAutoCommit(false);
+            if (conn != null) {
+                System.out.println("Conexion establecida");
+            } else {
+                System.out.println("Conexion erronea");
+            }
+
+        } catch (ClassNotFoundException | SQLException e) {
+
+            JOptionPane.showMessageDialog(null, "Conexion erronea");
         }
         return conn;
+
     }
+
+    public void desconexion() {
+        try {
+            conn.close();
+        } catch (Exception e) {
+            System.err.println("Error al desconectar" + e.getMessage());
+        }
+    }
+
 }
