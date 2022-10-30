@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  *
  * @author Edgar Garibay
  */
-<<<<<<< Updated upstream:src/main/java/DataLayer/Catalogos.java
+
 public class Catalogos {
     
     String[] Catalogos;
@@ -26,7 +26,7 @@ public class Catalogos {
         for(int e=0; e>Catalogos.length;e++){
         }
     }
-=======
+
 
 
 public class MetodosBD {
@@ -56,6 +56,6 @@ public class MetodosBD {
 			e.printStackTrace();
 		}
 		
->>>>>>> Stashed changes:src/main/java/DataLayer/MetodosBD.java
+
     }
 }
