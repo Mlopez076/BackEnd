@@ -4,7 +4,6 @@
  */
 package DataLayer;
 
-
 /**
  *
  * @author Edgar Garibay
@@ -23,7 +22,7 @@ public class Usuarios {
 	public Usuarios(String Nombre,String ApellidoM,String ApellidoPa,String Correo) {
 		this.Nombre = Nombre;
 		this.ApellidoPa = ApellidoPa;
-		this.ApellidoMa = ApellidoM;
+		this.ApellidoMa = ApellidoMa;
 	}
 
 	public int getId() {
@@ -64,6 +63,4 @@ public class Usuarios {
 		return this.id+", "+this.Nombre+", "+this.ApellidoPa+", "+this.ApellidoMa;
 	}
 }
-
-
 
