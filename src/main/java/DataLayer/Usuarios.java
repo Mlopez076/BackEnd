@@ -22,7 +22,7 @@ public class Usuarios {
 	public Usuarios(String Nombre,String ApellidoM,String ApellidoPa,String Correo) {
 		this.Nombre = Nombre;
 		this.ApellidoPa = ApellidoPa;
-		this.ApellidoMa = ApellidoMa;
+		this.ApellidoMa = ApellidoM;
 	}
 
 	public int getId() {
