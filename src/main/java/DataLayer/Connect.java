@@ -3,9 +3,7 @@ package DataLayer;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import oracle.jdbc.OracleResultSet;
-import oracle.jdbc.OraclePreparedStatement;
-import java.util.Properties;
+
 import javax.swing.JOptionPane;
 
 public class Connect {
