@@ -15,6 +15,7 @@ public class Usuarios {
 	private String Nombre;
 	private String ApellidoPa;
 	private String ApellidoMa;
+        private String Correo;
 	
 	public Usuarios() {
 	}
@@ -23,6 +24,8 @@ public class Usuarios {
 		this.Nombre = Nombre;
 		this.ApellidoPa = ApellidoPa;
 		this.ApellidoMa = ApellidoM;
+                this.Correo=Correo;
+                
 	}
 
 	public int getId() {
@@ -56,6 +59,15 @@ public class Usuarios {
     public void setApellidoMa(String ApellidoMa) {
         this.ApellidoMa = ApellidoMa;
     }
+
+    public String getCorreo() {
+        return Correo;
+    }
+
+    public void setCorreo(String Correo) {
+        this.Correo = Correo;
+    }
+    
 
 	
 	@Override
