@@ -9,30 +9,44 @@ import javax.swing.JOptionPane;
 public class Connect {
 
     private static Connection conn = null;
-    private static String login = "Backend";
+    private static String login = "BACKEND";
     private static String clave = "12345";
     private static String url = "jdbc:oracle:thin:@25.39.115.47:1521:XE";
 
     public static void main(String[] args) {
-        Connect c = new Connect();
-       
-         UsuarioNuevo();
+      
+       UsuarioNuevo();
    
     }
-public static void UsuarioNuevo(){
+    public static void UsuarioNuevo(){
      Usuarios Reg=new Usuarios();
       /*Borrar*/
-      Reg.setNombre("Gerita");
-      Reg.setApellidoPa("Hernandez");
-      Reg.setApellidoMa("Cortez");
-      Reg.setCorreo("gerHer@accitesz.com");
+      Reg.setNombre("Hernesto");
+      Reg.setApellidoPa("Rodriguez");
+      Reg.setApellidoMa("Perez");
+      Reg.setCorreo("Herodigurez@accitesz.com");
+      Reg.setId(4);
       MetodosBD m=new MetodosBD();
-      m.registrar(Reg);
+     
+    //  m.registrar(Reg);
+        System.out.println( "Datos "+m.obtener());
+     
+  
       /*Fin de borrar*/
-     Usuarios nuevo=new Usuarios(Reg.getNombre(),Reg.getApellidoPa(),Reg.getApellidoMa(),Reg.getCorreo());
-             
+   //  Usuarios nuevo=new Usuarios(Reg.getNombre(),Reg.getApellidoPa(),Reg.getApellidoMa(),Reg.getCorreo());
+         Reg.setNombre("messie");
+  // m.actualizar(Reg);  
+       
+         
+                 System.out.println( "Datos "+m.obtener());
+                 
+         m.eliminar(Reg);
+         
+          System.out.println( "Datos "+m.obtener());
 }
-    public static Connection getConnection() {
+
+    public  static Connection getConnection() {
+     //   JOptionPane.showMessageDialog(null, Error.class);
         try {
           //  Class.forName("oracle.jdbc.driver.Oracle Driver");
             conn = DriverManager.getConnection(url, login, clave);

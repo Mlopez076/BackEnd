@@ -16,7 +16,7 @@ public class Usuarios {
 	private String ApellidoPa;
 	private String ApellidoMa;
         private String Correo;
-	
+      //  private String 
 	public Usuarios() {
 	}
 	
