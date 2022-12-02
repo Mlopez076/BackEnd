@@ -16,21 +16,31 @@ public class Usuarios {
 	private String ApellidoPa;
 	private String ApellidoMa;
         private String Correo;
+        private String Password;
       //  private String 
 	public Usuarios() {
 	}
 	
-	public Usuarios(String Nombre,String ApellidoM,String ApellidoPa,String Correo) {
+	public Usuarios(String Nombre,String ApellidoM,String ApellidoPa,String Correo, String Contrasenia) {
 		this.Nombre = Nombre;
 		this.ApellidoPa = ApellidoPa;
 		this.ApellidoMa = ApellidoM;
                 this.Correo=Correo;
+                Password=Contrasenia;
                 
 	}
 
 	public int getId() {
 		return id;
 	}
+
+    public String getPassword() {
+        return Password;
+    }
+
+    public void setPassword(String Password) {
+        this.Password = Password;
+    }
 
 	public void setId(int id) {
 		this.id = id;
