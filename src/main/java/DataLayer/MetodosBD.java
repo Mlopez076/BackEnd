@@ -27,11 +27,11 @@ public class MetodosBD implements IClienteDao {
 
         // String sql="INSERT INTO PERSONAS values (1,"+cliente.getNombre()+","+cliente.getApellidoPa()+","+cliente.getApellidoMa()+",12/10/2021,Siempre,Floridacity,1,2,RFC,si,13/10/2021,13/10/2021"+")";
         //  Statement stm= null;
-        Connection con = null;
+        Connection con = Connect.getConnection();
 
-        String sql = "insert into SYSTEM.PERSONAS(PERSONALLAVE,NOMBRE, APELLIDOPATERNO, APELLIDOMATERNO,FECHANACIMIENTO,SEXO,CALLE,NUMEROEXTERIOR,NUMEROINTERIOR,RFC,ACTIVO,FECHACREACION,FECHAMODIFICACION) values(?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        String sql = "insert into BASE.PERSONAS(PERSONALLAVE,NOMBRE, APELLIDOPATERNO, APELLIDOMATERNO,FECHANACIMIENTO,SEXO,CALLE,NUMEROEXTERIOR,NUMEROINTERIOR,RFC,ACTIVO,FECHACREACION,FECHAMODIFICACION) values(?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
-        con = Connect.getConnection();
+    
 
         boolean registrar = false;
         try {
@@ -75,7 +75,7 @@ public class MetodosBD implements IClienteDao {
         Statement stm = null;
         ResultSet rs = null;
 
-        String sql = "SELECT * FROM  SYSTEM.PERSONAS ORDER BY PERSONALLAVE";
+        String sql = "SELECT * FROM  BASE.PERSONAS ORDER BY PERSONALLAVE";
 
         List<Usuarios> listaCliente = new ArrayList<Usuarios>();
 
@@ -114,7 +114,7 @@ public class MetodosBD implements IClienteDao {
         try {
             //System.out.println(cliente.getNombre());
             connect = Connect.getConnection();
-            String sql = "UPDATE SYSTEM.PERSONAS SET NOMBRE=?, APELLIDOPATERNO=?, APELLIDOMATERNO=? WHERE PERSONALLAVE= ? ";
+            String sql = "UPDATE BASE.PERSONAS SET NOMBRE=?, APELLIDOPATERNO=?, APELLIDOMATERNO=? WHERE PERSONALLAVE= ? ";
 
             System.out.println(sql);
             PreparedStatement st = connect.prepareStatement(sql);
@@ -149,7 +149,7 @@ public class MetodosBD implements IClienteDao {
 
         try {
             con = Connect.getConnection();
-            PreparedStatement st = con.prepareStatement("DELETE FROM SYSTEM.PERSONAS WHERE PERSONALLAVE=?");
+            PreparedStatement st = con.prepareStatement("DELETE FROM BASE.PERSONAS WHERE PERSONALLAVE=?");
             st.setInt(1, cliente.getId());
             int borrados = st.executeUpdate();
             con.close();

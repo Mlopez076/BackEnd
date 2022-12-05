@@ -9,12 +9,16 @@ import javax.swing.JOptionPane;
 public class Connect {
 
     private static Connection conn = null;
-    private static String login = "BACKEND";
+    private static String login = "BASE";
     private static String clave = "12345";
     private static String url = "jdbc:oracle:thin:@25.39.115.47:1521:XE";
-
+ public static void main (String[] args){
+      getConnection();
+ }
+ 
    
     public static void UsuarioNuevo(){
+      
      Usuarios Reg=new Usuarios();
       /*Borrar
     //  Reg.setNombre("Hernesto");

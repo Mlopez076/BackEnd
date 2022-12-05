@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"DataLayer","l":"Catalogo"},{"p":"DataLayer","l":"Connect"},{"p":"DataLayer","l":"IClienteDao"},{"p":"DataLayer","l":"MetodosBD"},{"p":"DataLayer","l":"ProcedimientosAlmacenados"},{"p":"Servlets","l":"RecuperarUsuario"},{"p":"DataLayer","l":"Usuarios"}];updateSearchResults();

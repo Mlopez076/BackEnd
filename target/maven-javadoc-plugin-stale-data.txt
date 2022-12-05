@@ -1,0 +1,63 @@
+@options
+@packages
+@argfile
+-classpath
+'C:/Users/Edgar Garibay/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.7.0.0/ojdbc11-21.7.0.0.jar;C:/Users/Edgar Garibay/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar;C:/Users/Edgar Garibay/.m2/repository/com/github/hazendaz/tomcat/tomcat9-config/9.0.62/tomcat9-config-9.0.62.pom;C:/Users/Edgar Garibay/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar;C:/Users/Edgar Garibay/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar;C:/Users/Edgar Garibay/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar;C:/Users/Edgar Garibay/.m2/repository/org/javassist/javassist/3.25.0-GA/javassist-3.25.0-GA.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'C:/Users/Edgar Garibay/Desktop/NEll/BackEnd/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/Edgar Garibay/Desktop/NEll/BackEnd/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'TechMark 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/7/docs/api' 'C:/Users/Edgar Garibay/Desktop/NEll/BackEnd/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'TechMark 1.0-SNAPSHOT API'
+DataLayer
+Servlets
+'C:/Users/Edgar Garibay/Desktop/NEll/BackEnd/src/main/java/DataLayer/Catalogo.java'
+'C:/Users/Edgar Garibay/Desktop/NEll/BackEnd/src/main/java/DataLayer/Connect.java'
+'C:/Users/Edgar Garibay/Desktop/NEll/BackEnd/src/main/java/DataLayer/IClienteDao.java'
+'C:/Users/Edgar Garibay/Desktop/NEll/BackEnd/src/main/java/DataLayer/MetodosBD.java'
+'C:/Users/Edgar Garibay/Desktop/NEll/BackEnd/src/main/java/DataLayer/ProcedimientosAlmacenados.java'
+'C:/Users/Edgar Garibay/Desktop/NEll/BackEnd/src/main/java/DataLayer/Usuarios.java'
+'C:/Users/Edgar Garibay/Desktop/NEll/BackEnd/src/main/java/Servlets/RecuperarUsuario.java'
+C:\Users\Edgar Garibay\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.7.0.0\ojdbc11-21.7.0.0.jar = 1664899014660
+C:\Users\Edgar Garibay\.m2\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar = 1669959109066
+C:\Users\Edgar Garibay\.m2\repository\com\github\hazendaz\tomcat\tomcat9-config\9.0.62\tomcat9-config-9.0.62.pom = 1669996707250
+C:\Users\Edgar Garibay\.m2\repository\javax\javaee-web-api\7.0\javaee-web-api-7.0.jar = 1664899014660
+C:\Users\Edgar Garibay\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar = 1669996709280
+C:\Users\Edgar Garibay\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar = 1669996709426
+C:\Users\Edgar Garibay\.m2\repository\org\javassist\javassist\3.25.0-GA\javassist-3.25.0-GA.jar = 1669996710080
+C:\Users\Edgar Garibay\Desktop\NEll\BackEnd\src\main\java = 1669988619667
+C:\Users\Edgar Garibay\Desktop\NEll\BackEnd\target\apidocs\allclasses-index.html = 1669998807866
+C:\Users\Edgar Garibay\Desktop\NEll\BackEnd\target\apidocs\allpackages-index.html = 1669998807876
+C:\Users\Edgar Garibay\Desktop\NEll\BackEnd\target\apidocs\copy.svg = 1669998808068
+C:\Users\Edgar Garibay\Desktop\NEll\BackEnd\target\apidocs\element-list = 1669998807458
+C:\Users\Edgar Garibay\Desktop\NEll\BackEnd\target\apidocs\help-doc.html = 1669998807993
+C:\Users\Edgar Garibay\Desktop\NEll\BackEnd\target\apidocs\index-all.html = 1669998807971
+C:\Users\Edgar Garibay\Desktop\NEll\BackEnd\target\apidocs\index.html = 1669998807824
+C:\Users\Edgar Garibay\Desktop\NEll\BackEnd\target\apidocs\jquery-ui.overrides.css = 1669998808462
+C:\Users\Edgar Garibay\Desktop\NEll\BackEnd\target\apidocs\member-search-index.js = 1669998807902
+C:\Users\Edgar Garibay\Desktop\NEll\BackEnd\target\apidocs\module-search-index.js = 1669998807881
+C:\Users\Edgar Garibay\Desktop\NEll\BackEnd\target\apidocs\overview-summary.html = 1669998807977
+C:\Users\Edgar Garibay\Desktop\NEll\BackEnd\target\apidocs\overview-tree.html = 1669998807810
+C:\Users\Edgar Garibay\Desktop\NEll\BackEnd\target\apidocs\package-search-index.js = 1669998807887
+C:\Users\Edgar Garibay\Desktop\NEll\BackEnd\target\apidocs\script.js = 1669998808051
+C:\Users\Edgar Garibay\Desktop\NEll\BackEnd\target\apidocs\search.js = 1669998808074
+C:\Users\Edgar Garibay\Desktop\NEll\BackEnd\target\apidocs\serialized-form.html = 1669998807605
+C:\Users\Edgar Garibay\Desktop\NEll\BackEnd\target\apidocs\stylesheet.css = 1669998808020
+C:\Users\Edgar Garibay\Desktop\NEll\BackEnd\target\apidocs\tag-search-index.js = 1669998807908
+C:\Users\Edgar Garibay\Desktop\NEll\BackEnd\target\apidocs\type-search-index.js = 1669998807895
