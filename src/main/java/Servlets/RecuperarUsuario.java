@@ -18,11 +18,11 @@ import javax.swing.JOptionPane;
 
 @WebServlet(name = "RecuperarUsuario", urlPatterns = {"/RecuperarUsuario"})
 public class RecuperarUsuario extends HttpServlet {
- private static Connection conn = null;
-    private static String login = "BACKEND";
+ 
+     private static Connection conn = null;
+    private static String login = "BASE";
     private static String clave = "12345";
     private static String url = "jdbc:oracle:thin:@25.39.115.47:1521:XE";
-   
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -40,33 +40,11 @@ public class RecuperarUsuario extends HttpServlet {
              Reg.setCorreo(Correo);
              }
              Reg.setPassword(Contrasenia);
-             //m.registrar(Reg);
-              getConnection();
-                       request.setAttribute("Registro", Reg);
-             
-             request.getRequestDispatcher("index.html").forward(request, response);
+            m.registrar(Reg);
+            request.setAttribute("Registro", Reg); 
+            request.getRequestDispatcher("index.html").forward(request, response);
              
              
     }
-    public  static Connection getConnection() {
-     //   JOptionPane.showMessageDialog(null, Error.class);
-        try {
-          //  Class.forName("oracle.jdbc.driver.Oracle Driver");
-            conn = DriverManager.getConnection(url, login, clave);
-            conn.setAutoCommit(false);
-            if (conn != null) {
-                System.out.println("Conexion establecida");
-            } else {
-                System.out.println("Conexion erronea");
-            }
-
-        } catch (SQLException e) {
-                 System.out.println(e);
-            JOptionPane.showMessageDialog(null, "Conexion erronea: "+ e);
-        } 
-        return conn;
-
-    }
-
    
 }
