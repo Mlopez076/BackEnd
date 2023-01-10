@@ -38,7 +38,7 @@ public class MetodosBD implements IClienteDao {
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setString(2, cliente.getNombre());
             ps.setString(3, cliente.getApellidoPa());
-            ps.setString(4, cliente.getApellidoMa());
+            ps.setString(4, cliente.getCorreo());//Apellido Materno reemplazado por correo
             ps.setString(5, "12/10/2021");
             ps.setString(6, "H");
             ps.setString(7, "a");
